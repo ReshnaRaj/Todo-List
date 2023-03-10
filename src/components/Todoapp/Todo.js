@@ -20,7 +20,7 @@ const Todo = () => {
   return (
     <div className="todo-container">
     <div className='header'>TODO APP</div>
-    <div className='add-task'><Addtask addTask={addTask}/></div>
+    <div className='add-task'><Addtask addTask={addTask} required/></div>
     <div className='tasks'>{task.map((tasks,index)=>(
         <Listtask tasks={tasks} removeTask={removeTask} index={index} key={index}/>
 
